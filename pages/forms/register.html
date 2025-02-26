@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TravelPal - Login</title>
+  <link rel="stylesheet" href="../../assets/styles/forms.css">
+  <link rel="icon" type="image/x-icon" href="../../assets/images/favicon.ico">
+</head>
+<body>
+  <header>
+    <div class="container">
+        <img src="../../assets/images/Icon.png" alt="TravelPal Logo">
+      <nav>
+        <ul>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="../profile.html">Profile</a></li>
+          <li><a href="../gallery.html">Gallery</a></li>
+          <li><a href="../contact.html">Contact Us</a></li>
+          <li><a href="../destinations.html">Destinations</a></li>
+          <li><a href="../plans.html">Plans</a></li>
+          <li><a href="../travel_tips.html">Travel Tips</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../faq.html">FAQ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="login-container">
+    <h2>Create an Account</h2>
+    <form action="#" method="post">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" placeholder="Enter your name">
+        </div>
+        
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <span class="required-text"><i>Required</i></span>
+        </div>
+        
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter your password" required>
+            <span class="required-text"><i>Required</i></span>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Confirm Password:</label>
+            <input type="password" id="password" placeholder="Confirm your password" required>
+            <span class="required-text"><i>Required</i></span>
+        </div>
+
+        <div class="form-group">
+            <label for="password">What's your birthday?</label>
+            <input type="date">
+        </div>
+        <button type="submit" class="btn">Create Account</button>
+      <p class="register-link">
+        Already have an account? <a href="login.html">Login here</a>
+      </p>
+    </form>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 TravelPal. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
+
+<script src="../../assets/scripts/login.js"></script>
