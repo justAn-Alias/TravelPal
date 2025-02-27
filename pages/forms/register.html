@@ -33,10 +33,16 @@
     <h2>Create an Account</h2>
     <form action="#" method="post">
         <div class="form-group">
-            <label for="name">Name:</label>
-            <input type="text" placeholder="Enter your name">
+            <label for="name">First Name:</label>
+            <input type="text" id="name" placeholder="Enter your first name" required>
+            <span class="required-text"><i>Required</i></span>
         </div>
-        
+
+        <div class="form-group">
+          <label for="name">Surname:</label>
+          <input type="text" id="surname" placeholder="Enter your surname">
+      </div>
+
         <div class="form-group">
             <label for="email">Email:</label>
             <input type="email" id="email" placeholder="Enter your email" required>
@@ -50,14 +56,14 @@
         </div>
 
         <div class="form-group">
-            <label for="password">Confirm Password:</label>
-            <input type="password" id="password" placeholder="Confirm your password" required>
-            <span class="required-text"><i>Required</i></span>
+            <label for="password">Origin Country:</label>
+            <input type="text" id="confpassword" placeholder="Where are you from?">
         </div>
 
         <div class="form-group">
             <label for="password">What's your birthday?</label>
             <input type="date">
+            <span class="required-text"><i>You must be at least 13 to use the site</i></span>
         </div>
         <button type="submit" class="btn">Create Account</button>
       <p class="register-link">
