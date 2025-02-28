@@ -18,7 +18,7 @@
           <li><a href="register.html">Register</a></li>
           <li><a href="../profile.html">Profile</a></li>
           <li><a href="../gallery.html">Gallery</a></li>
-          <li><a href="../contact.html">Contact Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
           <li><a href="../destinations.html">Destinations</a></li>
           <li><a href="../plans.html">Plans</a></li>
           <li><a href="../travel_tips.html">Travel Tips</a></li>
@@ -29,32 +29,35 @@
     </div>
   </header>
 
-  <div class="login-container">
+  <main class="login-container">
     <h2>Login</h2>
-    <form action="#" method="post">
-        <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" placeholder="Enter your email" required>
-            <span class="required-text"><i>Required</i></span>
-        </div>
+    <form action="../profile.html" method="post">
+       
+      
+      <button type="submit" class="btn" style="display: none;">Login</button>   <!-- כפתור נסתר בשביל שהבקרה תעבוד -->
 
-        <div class="form-group">
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" placeholder="Enter your password" required
-            pattern="^(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{7,12}$"
-            title="Required">
-            <span class="required-text"><i>Required</i></span>
-        </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required minlength="7" maxlength="12">
+      </div>
       <div class="form-group remember-me">
         <input type="checkbox" id="remember" name="remember">
         <label for="remember">Remember me</label>
       </div>
+
+
       <button type="submit" class="btn">Login</button>
       <p class="register-link">
         Don't have an account? <a href="register.html">Register here</a>
       </p>
     </form>
-  </div>
+
+  </main>
   <footer>
     <div class="container">
       <p>&copy; 2025 TravelPal. All rights reserved.</p>
@@ -62,5 +65,7 @@
   </footer>
 </body>
 </html>
+
+<script src="../../assets/scripts/login.js"></script>
 
 <script src="../../assets/scripts/login.js"></script>
