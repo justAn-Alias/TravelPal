@@ -18,7 +18,7 @@
             <li><a href="register.html">Register</a></li>
             <li><a href="../profile.html">Profile</a></li>
             <li><a href="../gallery.html">Gallery</a></li>
-            <li><a href="../contact.html">Contact Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
             <li><a href="../destinations.html">Destinations</a></li>
             <li><a href="../plans.html">Plans</a></li>
             <li><a href="../travel_tips.html">Travel Tips</a></li>
@@ -30,24 +30,21 @@
     </header>
   <main class="contact-container">
     <h2>Contact Us</h2>
-    <form action="thank_you.html" method="post" novalidate>
+    <form action="../../thankyou.html" method="GET">
       <div class="form-group">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" placeholder="Enter your name" required 
-               pattern="[A-Za-z\s]{2,50}" title="Only English letters and spaces, between 2 and 50 characters">
-        <span class="required-text" id="name-error"><i>Required</i></span>
+               pattern="[A-Za-z\s]{2,20}" title="Only English letters and spaces, between 2 and 20 characters">
       </div>
 
       <div class="form-group">
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" placeholder="Enter your email" required>
-        <span class="required-text" id="email-error"><i>Required</i></span>
       </div>
 
       <div class="form-group">
         <label for="message">Message:</label>
-        <textarea id="message" name="message" placeholder="Enter your message" required rows="5"></textarea>
-        <span class="required-text" id="message-error"><i>Required</i></span>
+        <textarea id="message" name="message" placeholder="Enter your message" required minlength="10" rows="5"></textarea>
       </div>
 
       <button type="submit" class="btn">Send Message</button>
@@ -61,5 +58,6 @@
   </footer>
 </body>
 </html>
+
 
 <script src="../../assets/scripts/contact.js"></script>
