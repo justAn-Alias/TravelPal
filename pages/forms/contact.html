@@ -1,63 +1,63 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TravelPal - Login</title>
-    <link rel="stylesheet" href="../../assets/styles/contact.css">
-    <link rel="icon" type="image/x-icon" href="../../assets/images/favicon.ico">
-</head>
-<body>
-    <header>
-      <div class="container">
-        <img src="../../assets/images/Icon.png" alt="TravelPal Logo">
-        <nav>
-          <ul>
-            <li><a href="../../index.html">Home</a></li>
-            <li><a href="login.html">Login</a></li>
-            <li><a href="register.html">Register</a></li>
-            <li><a href="../profile.html">Profile</a></li>
-            <li><a href="../gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="../destinations.html">Destinations</a></li>
-            <li><a href="../plans.html">Plans</a></li>
-            <li><a href="../travel_tips.html">Travel Tips</a></li>
-            <li><a href="../about.html">About</a></li>
-            <li><a href="../faq.html">FAQ</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-  <main class="contact-container">
-    <h2>Contact Us</h2>
-    <form action="../../thankyou.html" method="GET">
-      <div class="form-group">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" placeholder="Enter your name" required 
-               pattern="[A-Za-z\s]{2,20}" title="Only English letters and spaces, between 2 and 20 characters">
-      </div>
+/* Import global styles */
+@import url("forms.css");
 
-      <div class="form-group">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email" required>
-      </div>
+.contact-container {
+    width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .contact-container .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .contact-container .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .contact-container .form-group input,
+  .contact-container .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .contact-container .form-group .required-text {
+    color: rgb(239, 243, 238);
+    font-size: 0.9em;
+  }
+  
+  .contact-container .btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #e67e22;
+	  color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
 
-      <div class="form-group">
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" placeholder="Enter your message" required minlength="10" rows="5"></textarea>
-      </div>
-
-      <button type="submit" class="btn">Send Message</button>
-    </form>
-  </main>
-
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 TravelPal. All rights reserved.</p>
-    </div>
-  </footer>
-</body>
-</html>
-
+  @media (max-width: 768px) {
+    .contact-container {
+      width: 95%;
+      margin: 50px ;
+      padding: 20px;
+      color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+  }
 
 <script src="../../assets/scripts/contact.js"></script>
