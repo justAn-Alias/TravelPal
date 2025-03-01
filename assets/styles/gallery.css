@@ -1,8 +1,7 @@
 .gallery-header {
     text-align: center;
     padding: 50px 0;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-                url('../images/gallery-header-bg.jpg');
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(20, 20, 20, 0.5));
     background-size: cover;
     color: white;
     margin-bottom: 30px;
