@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TravelPal - Your Travel Companion</title>
-  <link rel="stylesheet" href="../assets/styles/index.css">
+  <title>TravelPal - Profile</title>
+  <link rel="stylesheet" href="../assets/styles/global.css">
+  <link rel="stylesheet" href="../assets/styles/profile.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
 </head>
 <body>
@@ -14,9 +16,6 @@
       <nav>
         <ul>
           <li><a href="../index.html">Home</a></li>
-          <li><a href="./forms/login.html">Login</a></li>
-          <li><a href="./forms/register.html">Register</a></li>
-          <li><a href="./profile.html">Profile</a></li>
           <li><a href="./gallery.html">Gallery</a></li>
           <li><a href="./forms/contact.html">Contact Us</a></li>
           <li><a href="./destinations.html">Destinations</a></li>
@@ -28,6 +27,78 @@
       </nav>
     </div>
   </header>
+
+  <main class="profile-container">
+    <div class="profile-header">
+      <div class="profile-cover"></div>
+      <div class="profile-info">
+        <div class="profile-avatar">
+          <img src="../assets/images/user/Screenshot 2025-03-01 114653.png" alt="Profile Picture">
+          <button class="edit-avatar"><i class="fas fa-camera"></i></button>
+        </div>
+        <h1>John Doe</h1>
+        <p class="profile-bio">Travel enthusiast | Photography lover | Adventure seeker</p>
+      </div>
+    </div>
+
+    <div class="profile-content">
+      <div class="profile-section">
+        <h2>Personal Information</h2>
+        <div class="info-grid">
+          <div class="info-item">
+            <i class="fas fa-envelope"></i>
+            <p>Email: john.doe@example.com</p>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>Location: New York, USA</p>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-calendar-alt"></i>
+            <p>Member since: January 2023</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="profile-section">
+        <h2>Travel Statistics</h2>
+        <div class="stats-grid">
+          <div class="stat-item">
+            <span class="stat-number">15</span>
+            <span class="stat-label">Countries Visited</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">45</span>
+            <span class="stat-label">Cities Explored</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">120</span>
+            <span class="stat-label">Photos Shared</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="profile-section">
+        <h2>Recent Trips</h2>
+        <div class="trips-grid">
+          <div class="trip-card">
+            <img src="../assets/images/Destinations/France/paris.jpg" alt="Paris Trip">
+            <div class="trip-info">
+              <h3>Paris, France</h3>
+              <p>December 2024</p>
+            </div>
+          </div>
+          <div class="trip-card">
+            <img src="../assets/images/Destinations/France/tokyo.jpg" alt="Tokyo Trip">
+            <div class="trip-info">
+              <h3>Tokyo, Japan</h3>
+              <p>October 2024</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
 
   <footer>
     <div class="container">
