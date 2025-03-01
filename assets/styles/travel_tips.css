@@ -1,0 +1,151 @@
+.tips-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.tips-header {
+    text-align: center;
+    padding: 50px 0;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                url('../images/tips-header-bg.jpg');
+    background-size: cover;
+    color: white;
+    border-radius: 15px;
+    margin-bottom: 40px;
+}
+
+.tips-header h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    animation: fadeIn 0.8s ease-out;
+}
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.tip-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 25px;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.tip-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.tip-icon {
+    font-size: 2.5em;
+    color: #e67e22;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.tip-card h2 {
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.tip-card p {
+    color: #ccc;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.read-more {
+    color: #e67e22;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.3s ease;
+}
+
+.read-more:hover {
+    color: #cf711f;
+}
+
+.featured-tip {
+    background: linear-gradient(45deg, #e67e22, #cf711f);
+    border-radius: 15px;
+    padding: 40px;
+    margin-top: 40px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.featured-content {
+    max-width: 600px;
+}
+
+.featured-tip h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.featured-tip p {
+    margin-bottom: 30px;
+    font-size: 1.1em;
+    opacity: 0.9;
+}
+
+.featured-tip .btn {
+    background: white;
+    color: #e67e22;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.featured-tip .btn:hover {
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .tips-container {
+        padding: 10px;
+    }
+
+    .tips-header {
+        padding: 30px 15px;
+    }
+
+    .tips-header h1 {
+        font-size: 2em;
+    }
+
+    .tips-grid {
+        gap: 20px;
+    }
+
+    .featured-tip {
+        padding: 30px 20px;
+    }
+
+    .featured-tip h2 {
+        font-size: 1.5em;
+    }
+}

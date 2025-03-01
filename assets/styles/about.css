@@ -1,0 +1,121 @@
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.about-header {
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 40px;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                url('../images/about-bg.jpg');
+    background-size: cover;
+    border-radius: 15px;
+    color: white;
+}
+
+.about-header h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    animation: fadeIn 0.8s ease-out;
+}
+
+.team-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.team-member {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+}
+
+.member-image {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+
+.member-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover .member-image img {
+    transform: scale(1.1);
+}
+
+.social-links {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.team-member:hover .social-links {
+    opacity: 1;
+}
+
+.social-links a {
+    color: white;
+    font-size: 1.5em;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #e67e22;
+}
+
+.member-info {
+    padding: 25px;
+    text-align: center;
+}
+
+.member-info h2 {
+    margin-bottom: 10px;
+    color: #e67e22;
+}
+
+.role {
+    color: #888;
+    margin-bottom: 15px;
+}
+
+.description {
+    line-height: 1.6;
+    color: #ccc;
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        padding: 20px;
+    }
+
+    .about-header {
+        padding: 30px;
+    }
+
+    .team-container {
+        gap: 20px;
+    }
+
+    .member-image {
+        height: 250px;
+    }
+}

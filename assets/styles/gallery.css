@@ -1,0 +1,117 @@
+.gallery-header {
+    text-align: center;
+    padding: 50px 0;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                url('../images/gallery-header-bg.jpg');
+    background-size: cover;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.gallery-header h1 {
+    font-size: 3em;
+    margin-bottom: 15px;
+    animation: fadeInDown 1s ease-out;
+}
+
+.gallery-header p {
+    font-size: 1.2em;
+    opacity: 0.9;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    aspect-ratio: 16/9;
+    height: auto;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    color: white;
+    padding: 20px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover .overlay {
+    transform: translateY(0);
+}
+
+.overlay h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.2em;
+}
+
+.overlay p {
+    margin: 0;
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        padding: 10px;
+    }
+
+    .gallery-header h1 {
+        font-size: 2em;
+    }
+
+    .gallery-item {
+        aspect-ratio: 1/1;
+    }
+}
+
+@media (min-width: 1400px) {
+    .gallery-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
