@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TravelPal - Your Travel Companion</title>
-  <link rel="stylesheet" href="../assets/styles/index.css">
+  <title>TravelPal - Travel Tips</title>
+  <link rel="stylesheet" href="../assets/styles/global.css">
+  <link rel="stylesheet" href="../assets/styles/travel_tips.css">
   <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
 </head>
 <body>
@@ -14,20 +15,69 @@
       <nav>
         <ul>
           <li><a href="../index.html">Home</a></li>
-          <li><a href="./forms/login.html">Login</a></li>
-          <li><a href="./forms/register.html">Register</a></li>
           <li><a href="./profile.html">Profile</a></li>
           <li><a href="./gallery.html">Gallery</a></li>
           <li><a href="./forms/contact.html">Contact Us</a></li>
           <li><a href="./destinations.html">Destinations</a></li>
           <li><a href="./plans.html">Plans</a></li>
-          <li><a href="./travel_tips.html">Travel Tips</a></li>
           <li><a href="./about.html">About</a></li>
-          <li><a href="./faq.html">FAQ</a></li>
         </ul>
       </nav>
     </div>
   </header>
+
+  <main class="tips-container">
+    <section class="tips-header">
+      <h1>Essential Travel Tips</h1>
+      <p>Make your journey smoother with these helpful tips</p>
+    </section>
+
+    <section class="tips-grid">
+      <article class="tip-card">
+        <div class="tip-icon">
+          <i class="fas fa-passport"></i>
+        </div>
+        <h2>Documentation</h2>
+        <p>Always keep your passport, visas, and travel insurance documents in a safe place. Make digital copies as backup.</p>
+        <a href="#" class="read-more">Learn More <i class="fas fa-arrow-right"></i></a>
+      </article>
+
+      <article class="tip-card">
+        <div class="tip-icon">
+          <i class="fas fa-suitcase-rolling"></i>
+        </div>
+        <h2>Packing Smart</h2>
+        <p>Roll your clothes instead of folding them to save space. Pack versatile items that can be mixed and matched.</p>
+        <a href="#" class="read-more">Learn More <i class="fas fa-arrow-right"></i></a>
+      </article>
+
+      <article class="tip-card">
+        <div class="tip-icon">
+          <i class="fas fa-money-bill-wave"></i>
+        </div>
+        <h2>Money Management</h2>
+        <p>Inform your bank about your travel plans and always carry multiple payment methods.</p>
+        <a href="#" class="read-more">Learn More <i class="fas fa-arrow-right"></i></a>
+      </article>
+
+      <article class="tip-card">
+        <div class="tip-icon">
+          <i class="fas fa-plane"></i>
+        </div>
+        <h2>Flight Tips</h2>
+        <p>Check in online 24 hours before your flight and arrive at the airport with plenty of time to spare.</p>
+        <a href="#" class="read-more">Learn More <i class="fas fa-arrow-right"></i></a>
+      </article>
+    </section>
+
+    <section class="featured-tip">
+      <div class="featured-content">
+        <h2>Pro Tip of the Day</h2>
+        <p>Learn basic phrases in the local language of your destination. It shows respect and can help you navigate better.</p>
+        <button class="btn">Get More Tips</button>
+      </div>
+    </section>
+  </main>
 
   <footer>
     <div class="container">
