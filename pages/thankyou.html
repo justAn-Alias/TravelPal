@@ -1,39 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thank You - TravelPal</title>
-    <link rel="stylesheet" href="thankyou.css">
+    <link rel="stylesheet" href="../assets/styles/global.css">
+    <link rel="stylesheet" href="../assets/styles/thankyou.css">
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
 </head>
 <body>
-    <main class="thank-you-container">
-        <div class="checkmark-circle">
-            <i class="checkmark">✓</i>
+    <header>
+        <div class="container">
+            <img src="../assets/images/Icon.png" alt="TravelPal Logo">
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="forms/contact.html">Back to Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <h1 class="animate-text">Thank You!</h1>
-        <div class="thank-you-content animate-up">
-            <p class="message">We appreciate your submission!</p>
-            <p class="sub-message">Your adventure begins here...</p>
-            <div class="animation-container">
-                <div class="plane-animation">✈️</div>
+    </header>
+
+    <main class="thankyou-container">
+        <div class="thankyou-content">
+            <div class="checkmark-circle">
+                <i class="checkmark">✓</i>
             </div>
-            <a href="index.html" class="back-btn pulse">Return to Homepage</a>
+            <h1 class="animate-text">Thank You!</h1>
+            <div class="message-box animate-up">
+                <p class="message">We appreciate your submission!</p>
+                <p class="sub-message">Your adventure begins here...</p>
+                <div class="animation-container">
+                    <div class="plane-animation">✈️</div>
+                </div>
+                <a href="../index.html" class="btn pulse">Return to Homepage</a>
+            </div>
         </div>
     </main>
-    <script>
-        // Trigger confetti when page loads
-        window.onload = function() {
-            confetti({
-                particleCount: 100,
-                spread: 70,
-                origin: { y: 0.6 }
-            });
 
-            // Add class to trigger animations
-            document.querySelector('.thank-you-container').classList.add('visible');
-        }
-    </script>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 TravelPal. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="../assets/scripts/thankyou.js"></script>
 </body>
 </html>
