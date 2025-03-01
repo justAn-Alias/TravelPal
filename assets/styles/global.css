@@ -1,4 +1,4 @@
-* {
+* { 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,13 +9,22 @@
     src: url(../fonts/Oxygen-Regular.ttf);
   }
 
+  @font-face {
+    font-family: Teko;
+    src: url(../fonts/Teko-Regular.ttf);
+  }
+
   body {
     font-family: Oxygen;
     line-height: 1.6;
     background-color: rgb(18, 18, 20);
     color: #f8f8f8;
   }
-  
+
+  input {
+    font-family: Teko;
+  }
+
   .container {
     width: 90%;
     max-width: 1200px;
