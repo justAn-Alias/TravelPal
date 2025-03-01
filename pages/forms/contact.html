@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TravelPal - Login</title>
-    <link rel="stylesheet" href="../../assets/styles/contact.css">
+    <title>TravelPal - Contact Us</title>
+    <link rel="stylesheet" href="../../assets/styles/forms.css">
     <link rel="icon" type="image/x-icon" href="../../assets/images/favicon.ico">
 </head>
 <body>
@@ -28,27 +28,32 @@
         </nav>
       </div>
     </header>
-  <main class="contact-container">
-    <h2>Contact Us</h2>
-    <form action="../../thankyou.html" method="GET">
-      <div class="form-group">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" placeholder="Enter your name" required 
-               pattern="[A-Za-z\s]{2,20}" title="Only English letters and spaces, between 2 and 20 characters">
-      </div>
+  <main>
+    <div class="form-container">
+        <h2>Contact Us</h2>
+        <form action="../thankyou.html" method="get">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required 
+                       pattern="[A-Za-z\s]{2,20}" title="Only English letters and spaces, between 2 and 20 characters">
+                <span class="required-text">Required</span>
+            </div>
 
-      <div class="form-group">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email" required>
-      </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <span class="required-text">Required</span>
+            </div>
 
-      <div class="form-group">
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" placeholder="Enter your message" required minlength="10" rows="5"></textarea>
-      </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Enter your message" required minlength="10" rows="5"></textarea>
+                <span class="required-text">Required</span>
+            </div>
 
-      <button type="submit" class="btn">Send Message</button>
-    </form>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </div>
   </main>
 
   <footer>
