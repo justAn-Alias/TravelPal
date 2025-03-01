@@ -7,5 +7,5 @@ window.onload = function() {
     });
 
     // Add class to trigger animations
-    document.querySelector('.thank-you-container').classList.add('visible');
+    document.querySelector('.thankyou-container').classList.add('visible');
 }
